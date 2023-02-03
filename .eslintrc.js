@@ -8,9 +8,7 @@ module.exports = {
   extends: [
     "plugin:react/recommended",
     "plugin:@next/next/recommended",
-    "airbnb",
     "prettier",
-    "plugin:storybook/recommended",
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
@@ -20,7 +18,7 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: ["react", "@typescript-eslint", "simple-import-sort"],
+  plugins: ["react", "@typescript-eslint"],
   settings: {
     "import/resolver": {
       alias: {
