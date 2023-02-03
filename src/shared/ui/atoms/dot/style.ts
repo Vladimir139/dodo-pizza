@@ -6,5 +6,5 @@ export const Dot = styled.span`
   height: 3px;
   margin: 3px 2px;
   border-radius: 3px;
-  background-color: black;
+  background-color: ${({ theme }) => theme.color.text.secondary};
 `;

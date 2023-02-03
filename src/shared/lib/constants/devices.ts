@@ -1,9 +1,8 @@
 export const deviceWidths = {
-  mobile: 320,
-  smallTablet: 571,
-  tablet: 799,
-  laptop: 1281,
-  desktop: 1441,
+  mobile: 319,
+  smallTablet: 569,
+  tablet: 797,
+  laptop: 1024,
 };
 
 export interface IDevices {
@@ -11,7 +10,6 @@ export interface IDevices {
   smallTablet: string;
   tablet: string;
   laptop: string;
-  desktop: string;
 }
 
 export const devices: IDevices = {
@@ -19,5 +17,4 @@ export const devices: IDevices = {
   smallTablet: `${deviceWidths.smallTablet}px`,
   tablet: `${deviceWidths.tablet}px`,
   laptop: `${deviceWidths.laptop}px`,
-  desktop: `${deviceWidths.desktop}px`,
 };

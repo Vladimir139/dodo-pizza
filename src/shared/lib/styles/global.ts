@@ -39,5 +39,14 @@ export const Global = createGlobalStyle`
 export const Container = styled.div`
   margin: 0 auto;
   min-width: 320px;
-  max-width: 1280px;
+  max-width: 1440px;
+  padding: 0 40px;
+
+  @media (max-width: ${({ theme }) => theme.devices.tablet}) {
+    padding: 0 20px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.devices.smallTablet}) {
+    padding: 0 10px;
+  }
 `;

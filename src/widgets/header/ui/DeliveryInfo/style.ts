@@ -6,9 +6,9 @@ export const DeliveryInfo = styled.div`
 `;
 
 export const DeliveryCity = styled.p`
-  color: rgb(0, 0, 0);
   font-size: 18px;
   line-height: 1.2;
+  color: ${({ theme }) => theme.color.text.secondary};
 `;
 
 export const StyleNameCity = styled.button`
@@ -22,11 +22,11 @@ export const StyleNameCity = styled.button`
 
 export const DeliveryTime = styled.p`
   margin-top: 3px;
-  color: rgb(0, 0, 0);
   font-size: 15px;
   font-weight: 500;
   position: relative;
   cursor: pointer;
+  color: ${({ theme }) => theme.color.text.secondary};
 `;
 
 export const HeaderStar = styled(AiFillStar)`

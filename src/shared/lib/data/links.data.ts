@@ -3,42 +3,42 @@ import { Link } from "@shared/lib/types/LinkNavigation";
 export const Links: Link[] = [
   {
     Title: "Пицца",
-    path: "/",
+    path: "#pizza",
   },
   {
     Title: "Комбо",
-    path: "/",
+    path: "#combo",
   },
   {
     Title: "Закуски",
-    path: "/",
+    path: "#snacks",
   },
   {
     Title: "Десерты",
-    path: "/",
+    path: "#desserts",
   },
   {
     Title: "Напитки",
-    path: "/",
+    path: "#drinks",
   },
   {
     Title: "Другие товары",
-    path: "/",
+    path: "#otherGoods",
   },
   {
     Title: "Акции",
-    path: "/",
+    path: "/stock",
   },
   {
     Title: "Контакты",
-    path: "/",
+    path: "/contacts",
   },
   {
     Title: "О нас",
-    path: "/",
+    path: "/aboutUs",
   },
   {
     Title: "Работа в Додо",
-    path: "/",
+    path: "/jobInDodo",
   },
 ];

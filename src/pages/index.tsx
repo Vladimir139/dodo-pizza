@@ -1,7 +1,8 @@
-import { Container } from "@shared/lib/styles/global";
+import { HomePage } from "@views/Main";
+import React from "react";
 
 const Home = () => {
-  return <Container></Container>;
+  return <HomePage />;
 };
 
 export default Home;

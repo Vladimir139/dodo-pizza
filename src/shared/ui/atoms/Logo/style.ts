@@ -4,16 +4,17 @@ import styled, { css } from "styled-components";
 
 export const Logo = styled(Link)<LogoProps>`
   ${(props) =>
-    props.large &&
-    css`
-      display: block;
-      width: 250px;
-      height: 46px;
-      background-image: url("/img/Logo/BlackLargeLogo.png");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-    `}
+    (props.size === "large" &&
+      css`
+        display: block;
+        width: 250px;
+        height: 46px;
+        background-image: url("/img/Logo/BlackLargeLogo.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      `) ||
+    false}
 
   ${(props) =>
     props.white &&
@@ -27,7 +28,7 @@ export const Logo = styled(Link)<LogoProps>`
     `}
 
   ${(props) =>
-    props.small &&
+    props.size === "small" &&
     css`
       width: 36px;
       background-image: url("/img/Logo/small-logo.png");
