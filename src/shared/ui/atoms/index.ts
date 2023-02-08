@@ -6,3 +6,5 @@ export * from "./modal";
 export * from "./CloseButton";
 export * from "./NumberInput";
 export * from "./ButtonAuth";
+export * from "./PlusButton";
+export * from "./MinusButton";

@@ -1,9 +1,9 @@
 import React, { FC } from "react";
 import { ProductItemProps } from "@features/CardOfCart/model/types";
 import * as S from "./style";
-import { HiMinus, HiPlusSm } from "react-icons/Hi";
 import { useActions } from "@shared/lib/hooks/useActions";
 import { useTypedSelector } from "@shared/lib/hooks/useTypedSelector";
+import { MinusButton, PlusButton } from "@shared/ui/atoms";
 
 export const CardBasket: FC<ProductItemProps> = ({ quantity, product }) => {
   const { removeFromCart, plusQuantity, minusQuantity, getTotalAmount } =
@@ -44,7 +44,7 @@ export const CardBasket: FC<ProductItemProps> = ({ quantity, product }) => {
               plusQuantity({ id: product.id });
             }}
           >
-            <HiPlusSm size={"10px"} />
+            <PlusButton />
           </S.PlusQuantityProduct>
           <S.Quantity>{quantity}</S.Quantity>
           <S.MinusQuantityProduct
@@ -53,7 +53,7 @@ export const CardBasket: FC<ProductItemProps> = ({ quantity, product }) => {
               minusQuantity({ id: product.id });
             }}
           >
-            <HiMinus size={"10px"} />
+            <MinusButton />
           </S.MinusQuantityProduct>
         </S.ChangeQuantityWrapper>
       </S.LowWrapper>
