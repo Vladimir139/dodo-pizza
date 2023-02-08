@@ -3,27 +3,27 @@ import { Link } from "@shared/lib/types/LinkNavigation";
 export const Links: Link[] = [
   {
     Title: "Пицца",
-    path: "#pizza",
+    path: "/#pizza",
   },
   {
     Title: "Комбо",
-    path: "#combo",
+    path: "/#combo",
   },
   {
     Title: "Закуски",
-    path: "#snacks",
+    path: "/#snacks",
   },
   {
     Title: "Десерты",
-    path: "#desserts",
+    path: "/#desserts",
   },
   {
     Title: "Напитки",
-    path: "#drinks",
+    path: "/#drinks",
   },
   {
     Title: "Другие товары",
-    path: "#otherGoods",
+    path: "/#otherGoods",
   },
   {
     Title: "Акции",

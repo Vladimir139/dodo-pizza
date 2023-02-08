@@ -4,6 +4,7 @@ import { ButtonProps } from "@shared/ui/atoms/Button/types";
 export const Button = styled.button<ButtonProps>`
   transition: all 0.4s ease-out;
   border-radius: 9999px;
+  cursor: pointer;
 
   ${(props) =>
     props.size === "small" &&
@@ -19,6 +20,15 @@ export const Button = styled.button<ButtonProps>`
     css`
       height: 40px;
       padding: 8px 20px;
+      font-size: 16px;
+      line-height: 24px;
+    `}
+
+  ${(props) =>
+    props.size === "large" &&
+    css`
+      height: 48px;
+      padding: 12px 24px;
       font-size: 16px;
       line-height: 24px;
     `}
@@ -55,5 +65,14 @@ export const Button = styled.button<ButtonProps>`
         background-color: ${({ theme }) => theme.color.common.secondary};
         color: ${({ theme }) => theme.color.common.primary};
       }
+    `}
+
+  ${(props) =>
+    props.disabled &&
+    css`
+      width: 100%;
+      background-color: rgb(226, 226, 233);
+      color: rgb(171, 173, 186);
+      cursor: not-allowed;
     `}
 `;

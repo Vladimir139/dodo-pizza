@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import { Links } from "@shared/lib/data/links.data";
 import * as S from "./style";
 import { LinkNavigation } from "@shared/ui/atoms";
+import { useRouter } from "next/router";
 
 export const Navigation: FC = () => {
   return (

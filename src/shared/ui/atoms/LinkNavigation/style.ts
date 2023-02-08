@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import Link from "next/link";
+import { LinkNavigationProps } from "@shared/ui/atoms/LinkNavigation/types";
 
-export const LinkNavigation = styled(Link)`
+export const LinkNavigation = styled(Link)<LinkNavigationProps>`
   display: block;
   padding: 22px 0;
   font-weight: 500;

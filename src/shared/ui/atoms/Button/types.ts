@@ -1,8 +1,10 @@
-import { ReactNode } from "react";
+import { MouseEventHandler, ReactNode } from "react";
 
 export interface ButtonProps {
-  size?: "small" | "medium" | undefined;
+  size?: "small" | "medium" | "large" | undefined;
   color?: "gray" | "orange" | "light-orange" | undefined;
-  onClick?: () => void;
+  onClick?: (e: any) => void;
   children?: ReactNode | string | undefined;
+  disabled?: boolean;
+  type?: "submit" | "button" | undefined;
 }

@@ -1,20 +1,18 @@
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 import { CardOftenOrderedProps } from "./types";
 import * as S from "./style";
+import { ModalProductItem } from "@shared/ui/molecules";
 
-export const CardOftenOrdered: FC<CardOftenOrderedProps> = ({
-  id,
-  title,
-  img,
-  price,
-}) => {
+export const CardOftenOrdered: FC<CardOftenOrderedProps> = ({ product }) => {
   return (
-    <S.CardOftenOrdered>
-      <S.ImageCard src={img ? img[0] : ""} />
-      <S.WrapperInfoCard>
-        <S.Title>{title}</S.Title>
-        <S.Price>{price} ₽</S.Price>
-      </S.WrapperInfoCard>
-    </S.CardOftenOrdered>
+    <>
+      <S.CardOftenOrdered>
+        <S.ImageCard src={product ? product.img[0] : ""} />
+        <S.WrapperInfoCard>
+          <S.Title>{product ? product.title : ""}</S.Title>
+          <S.Price>{product ? product.price : ""} ₽</S.Price>
+        </S.WrapperInfoCard>
+      </S.CardOftenOrdered>
+    </>
   );
 };

@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 import * as S from "./style";
 import { Container } from "@shared/lib/styles/global";
 import { Products } from "@shared/lib/data/data.products";
@@ -16,6 +16,7 @@ export const ListProduct: FC<{ titleList: string; nameCategory: string }> = ({
           (item, index) => {
             return (
               <Card
+                category={item.category}
                 id={item.id}
                 img={item.img}
                 price={item.price}
@@ -23,6 +24,8 @@ export const ListProduct: FC<{ titleList: string; nameCategory: string }> = ({
                 buttonCart={item.buttonCart}
                 description={item.description}
                 key={item.id}
+                variableIngredients={item.variableIngredients}
+                requiredIngredients={item.requiredIngredients}
               />
             );
           },

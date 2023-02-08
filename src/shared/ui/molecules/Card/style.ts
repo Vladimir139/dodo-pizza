@@ -33,6 +33,7 @@ export const Description = styled.p`
   color: rgb(92, 99, 112);
   font-size: 14px;
   line-height: 20px;
+  display: flex;
 `;
 
 export const WrapperInfo = styled.div`
