@@ -1,5 +1,5 @@
-export interface Link {
+export interface LinkProps {
   Title?: string;
-  id?: number;
-  path?: string;
+  href?: string;
+  asPath?: string;
 }

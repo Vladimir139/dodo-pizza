@@ -1,44 +1,44 @@
-import { Link } from "@shared/lib/types/LinkNavigation";
+import { LinkProps } from "@shared/lib/types/LinkNavigation";
 
-export const Links: Link[] = [
+export const Links: LinkProps[] = [
   {
     Title: "Пицца",
-    path: "/#pizza",
+    href: "/#pizza",
   },
   {
     Title: "Комбо",
-    path: "/#combo",
+    href: "/#combo",
   },
   {
     Title: "Закуски",
-    path: "/#snacks",
+    href: "/#snacks",
   },
   {
     Title: "Десерты",
-    path: "/#desserts",
+    href: "/#desserts",
   },
   {
     Title: "Напитки",
-    path: "/#drinks",
+    href: "/#drinks",
   },
   {
     Title: "Другие товары",
-    path: "/#otherGoods",
+    href: "/#otherGoods",
   },
   {
     Title: "Акции",
-    path: "/stock",
+    href: "/stock",
   },
   {
     Title: "Контакты",
-    path: "/contacts",
+    href: "/contacts",
   },
   {
     Title: "О нас",
-    path: "/aboutUs",
+    href: "/aboutUs",
   },
   {
     Title: "Работа в Додо",
-    path: "/jobInDodo",
+    href: "/jobInDodo",
   },
 ];

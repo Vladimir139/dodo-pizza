@@ -11,15 +11,6 @@ export const CloseButton = styled.button<CloseButtonProps>`
   align-items: center;
   width: 25px;
   height: 25px;
-  z-index: 100;
-
-  ${(props) =>
-    props.sidebarButton &&
-    css`
-      &:hover {
-        transform: scale(1.1) rotate(180deg);
-      }
-    `}
 
   &:hover {
     transform: scale(1.1);
@@ -48,4 +39,23 @@ export const CloseButton = styled.button<CloseButtonProps>`
     background-color: white;
     transform: rotate(45deg);
   }
+
+  ${(props) =>
+    props.sidebarButton &&
+    css`
+      width: 35px;
+      height: 35px;
+
+      &::after {
+        top: 15px;
+      }
+
+      &::before {
+        top: 15px;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    `}
 `;

@@ -5,7 +5,6 @@ export const SidebarWrapper = styled.div<{ isOpened?: boolean }>`
   min-height: 100vh;
   position: relative;
   transition: transform 300ms ease-out 0s;
-  overflow-y: scroll;
 
   ${(props) =>
     props.isOpened &&
@@ -19,13 +18,12 @@ export const SidebarContent = styled.div<{ isOpened?: boolean }>`
   height: 100vh;
   width: 430px;
   position: fixed;
+  overflow-y: scroll;
   right: 0;
-  transform: translateX(430px);
+  transform: translateX(600px);
   top: 0;
   background: rgb(243, 243, 247);
   transition: transform 300ms ease-out 0s;
-
-  overflow-y: scroll;
 
   ${(props) =>
     props.isOpened &&
@@ -38,6 +36,23 @@ export const ButtonCloseWrapper = styled.div`
   position: absolute;
   top: calc(50% - 12px);
   left: -48px;
+`;
+
+export const InnerWrapperSidebar = styled.div<{ isOpened?: boolean }>`
+  position: fixed;
+  transition: transform 300ms ease-out 0s;
+  display: flex;
+  height: 100vh;
+  width: 430px;
+  right: 0;
+  top: 0;
+  transform: translateX(600px);
+
+  ${(props) =>
+    props.isOpened &&
+    css`
+      transform: translateX(0px);
+    `}
 `;
 
 export const SummaryItemsTitle = styled.p`

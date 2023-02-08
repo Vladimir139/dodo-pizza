@@ -3,6 +3,7 @@ import { AiFillStar } from "react-icons/ai";
 
 export const DeliveryInfo = styled.div`
   margin-left: 40px;
+  position: relative;
 `;
 
 export const DeliveryCity = styled.p`

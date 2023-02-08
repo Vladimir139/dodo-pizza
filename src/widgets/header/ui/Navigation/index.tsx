@@ -1,17 +1,23 @@
 import React, { FC } from "react";
 import { Links } from "@shared/lib/data/links.data";
 import * as S from "./style";
-import { LinkNavigation } from "@shared/ui/atoms";
 import { useRouter } from "next/router";
+import { NavLink } from "./style";
 
 export const Navigation: FC = () => {
+  const router = useRouter();
+
   return (
     <S.Navigation>
       <S.LinksNavigation>
         {Links.map((item, index) => (
-          <S.LinkWrapper key={index}>
-            <LinkNavigation Title={item.Title} href={item.path} />
-          </S.LinkWrapper>
+          <NavLink
+            key={index}
+            href={item.href || ""}
+            className={router.asPath === item.href ? "activeClass" : ""}
+          >
+            {item.Title}
+          </NavLink>
         ))}
       </S.LinksNavigation>
     </S.Navigation>
