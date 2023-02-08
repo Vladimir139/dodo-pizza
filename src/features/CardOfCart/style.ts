@@ -49,6 +49,24 @@ export const RemoveProductButton = styled.button`
   top: 0;
   right: 0;
   cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 1px;
+    background-color: #000;
+    transform: rotate(45deg);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 1px;
+    background-color: #000;
+    transform: rotate(-45deg);
+  }
 `;
 
 export const LowWrapper = styled.div`

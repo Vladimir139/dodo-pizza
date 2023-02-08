@@ -1,7 +1,6 @@
 import React, { FC } from "react";
 import { ProductItemProps } from "@features/CardOfCart/model/types";
 import * as S from "./style";
-import { VscClose } from "react-icons/Vsc";
 import { HiMinus, HiPlusSm } from "react-icons/Hi";
 import { useActions } from "@shared/lib/hooks/useActions";
 import { useTypedSelector } from "@shared/lib/hooks/useTypedSelector";
@@ -34,9 +33,7 @@ export const CardBasket: FC<ProductItemProps> = ({ quantity, product }) => {
             getTotalAmount({ totalAmount: getTotal().totalPrice });
             removeFromCart({ id: product.id });
           }}
-        >
-          <VscClose size={"16px"} />
-        </S.RemoveProductButton>
+        ></S.RemoveProductButton>
       </S.TopWrapper>
       <S.LowWrapper>
         <S.PriceProduct>{product.price * quantity} ₽</S.PriceProduct>

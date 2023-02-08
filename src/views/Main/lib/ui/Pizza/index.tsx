@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import React, { FC } from "react";
 import * as S from "./style";
 import { Container } from "@shared/lib/styles/global";
 import { Products } from "@shared/lib/data/data.products";
